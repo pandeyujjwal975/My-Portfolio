@@ -3,7 +3,7 @@
 This repository contains my personal cybersecurity portfolio website. It represents my learning journey across **cybersecurity fundamentals**, **frontend development**, and **automation thinking**, presented through a clean, hacker-style interface inspired by terminal workflows and minimal system design.
 
 The live portfolio is available here →  
-🔗 https://pandeyujjwal975.github.io/
+🔗 https://pandeyujjwal975.github.io/My-Portfolio/
 
 The website is built using **HTML5**, **CSS3**, and **vanilla JavaScript**, following a simple and maintainable structure. It integrates practical tools such as **Git & GitHub** for version control, **EmailJS** for the contact system, and **LocalStorage** for data persistence in projects. My cybersecurity learning foundation includes **Linux basics**, **networking fundamentals**, and **introductory web security concepts**, supported by hands-on tools like **Termux** and **SPCK**.
 
