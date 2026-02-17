@@ -208,18 +208,23 @@ body {
   font-size: 0.7rem;
   border-radius: 6px;
   background: rgba(0, 255, 136, 0.2);
+} 
+/* CONTACT */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  align-items: stretch;
 }
 
-/* CONTACT */
+/* Contact info card */
 .contact-info {
-  height: 100%;
   padding: 22px;
   border-radius: 16px;
   background: var(--card);
-  border: 1px solid rgba(0, 255, 136, 0.25);
-  box-shadow: 0 0 25px rgba(0, 255, 136, 0.08);
+  border: 1px solid rgba(0,255,136,0.25);
+  box-shadow: 0 0 25px rgba(0,255,136,0.08);
   backdrop-filter: blur(8px);
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -229,23 +234,42 @@ body {
 
 .contact-info:hover {
   transform: translateY(-5px);
-  box-shadow: 0 0 35px rgba(0, 255, 136, 0.18);
+  box-shadow: 0 0 35px rgba(0,255,136,0.18);
 }
 
 .contact-info p {
   color: var(--muted);
   font-size: 15px;
-  line-height: 1.5;
 }
 
+/* clean link style */
 .contact-info a {
   color: var(--accent);
   text-decoration: none;
+  font-weight: 500;
+  border-bottom: 1px solid rgba(0,255,136,0.35);
+  padding-bottom: 2px;
   transition: 0.25s ease;
 }
 
 .contact-info a:hover {
+  color: #66ffc2;
+  border-bottom: 1px solid var(--accent);
   text-shadow: 0 0 6px rgba(0,255,136,0.6);
+}
+
+/* badge style (for github) */
+.contact-info a.badge {
+  display: inline-block;
+  padding: 5px 12px;
+  border-radius: 8px;
+  background: rgba(0,255,136,0.08);
+  border: 1px solid rgba(0,255,136,0.25);
+  border-bottom: none;
+}
+
+.contact-info a.badge:hover {
+  background: rgba(0,255,136,0.18);
 }
 .contact-form {
   display: flex;
