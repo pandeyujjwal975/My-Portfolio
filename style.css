@@ -211,12 +211,42 @@ body {
 }
 
 /* CONTACT */
-.contact-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
+.contact-info {
+  height: 100%;
+  padding: 22px;
+  border-radius: 16px;
+  background: var(--card);
+  border: 1px solid rgba(0, 255, 136, 0.25);
+  box-shadow: 0 0 25px rgba(0, 255, 136, 0.08);
+  backdrop-filter: blur(8px);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 14px;
+  transition: 0.25s ease;
 }
 
+.contact-info:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 35px rgba(0, 255, 136, 0.18);
+}
+
+.contact-info p {
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.contact-info a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: 0.25s ease;
+}
+
+.contact-info a:hover {
+  text-shadow: 0 0 6px rgba(0,255,136,0.6);
+}
 .contact-form {
   display: flex;
   flex-direction: column;
