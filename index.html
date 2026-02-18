@@ -12,6 +12,28 @@
       emailjs.init("Zk_HRF8bmUzEjWyOa");
     })();
   </script>
+
+<script>
+(function(){
+ emailjs.init("x_iqGb89dJc0Gx2ub");
+})();
+document.getElementById("contact-form")
+.addEventListener("submit", function(event) {
+ event.preventDefault();
+ emailjs.sendForm(
+ "service_04q4ykp",
+ "template_pw26xb8",
+ this
+ )
+ .then(function() {
+ alert("Message sent successfully!");
+ }, function(error) {
+ alert("Failed to send message");
+ });
+});
+</script>
+
+  
   <meta name="description" content="Ujjwal Pandey cybersecurity portfolio showcasing secure and aesthetic web systems.">
   <meta name="keywords" content="cybersecurity, frontend, hacker portfolio">
   <link rel="preload" href="style.css" as="style">
