@@ -67,9 +67,20 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 /* ============================
    Contact Form Handler
    ============================ */
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
-  emailjs.sendForm("service_rvojymn", "template_xl6t7yo", form)
-    .then(() => alert("Message sent!"))
-    .catch(() => alert("Failed. Try again."));
+(function(){
+ emailjs.init("x_iqGb89dJc0Gx2ub");
+})();
+document.getElementById("contact-form")
+.addEventListener("submit", function(event) {
+ event.preventDefault();
+ emailjs.sendForm(
+ "service_04q4ykp",
+ "template_pw26xb8",
+ this
+ )
+ .then(function() {
+ alert("Message sent successfully!");
+ }, function(error) {
+ alert("Failed to send message");
+ });
 });
